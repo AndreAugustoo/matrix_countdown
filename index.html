@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix Countdown</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="timer">
+            <input type="number" id="hours" min="0" max="99" value="00" />
+            :
+            <input type="number" id="minutes" min="0" max="59" value="00" />
+            :
+            <input type="number" id="seconds" min="0" max="59" value="00" />
+        </div>
+        <div class="buttons">
+            <i class="fas fa-play" title="Start" onclick="startTimer()"></i>
+            <i class="fas fa-pause" title="Pause" onclick="pauseTimer()"></i>
+            <i class="fas fa-rotate-left" title="Reset" onclick="resetTimer()"></i>
+            <i class="fas fa-expand" title="Fullscreen" onclick="toggleFullscreen()"></i>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
